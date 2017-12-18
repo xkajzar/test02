@@ -11,7 +11,7 @@ import java.io.IOException;
  * Created by Mario on 18/12/2017.
  */
 
-public class filewrite {
+public class Filework {
 
     public void write(byte[] data, int size, String filename) throws IOException {
         FileOutputStream file = new FileOutputStream(filename);
@@ -19,10 +19,12 @@ public class filewrite {
         file.close();
     }
 
-    /*public byte[] read(String filename) throws IOException {
+    public byte[] read(String filename) throws IOException {
 
         FileInputStream file = new FileInputStream(filename);
-        byte[] data = file.read();
+        byte[] data=new byte[10000];
+        file.read(data);
+        return data;
 
-    }*/
+    }
 }

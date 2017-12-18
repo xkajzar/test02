@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         Button button1=(Button) findViewById(R.id.init);
         button1.setOnClickListener(new View.OnClickListener(){
 
-
             public void onClick(View v) {
 
                 TextView view =(TextView) findViewById(R.id.viewk);
@@ -25,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
                 view.setText(centerText.getText());
             }
         });
+        Filework fileWork= new Filework();
+
+
+
     }
 
 
