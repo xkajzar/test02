@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
 
             public void onClick(View v) {
+
                 TextView view =(TextView) findViewById(R.id.viewk);
-                view.setText("initializing");
+                EditText centerText = (EditText) findViewById(R.id.editText);
+                view.setText(centerText.getText());
             }
         });
     }
