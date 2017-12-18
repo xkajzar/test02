@@ -12,7 +12,12 @@ import java.io.IOException;
  */
 
 public class Filework {
-
+    public void init(){
+        /*
+        if file == exists --> read
+        else --> create empty
+         */
+    }
     public void write(byte[] data, int size, String filename) throws IOException {
         FileOutputStream file = new FileOutputStream(filename);
         file.write(data);
